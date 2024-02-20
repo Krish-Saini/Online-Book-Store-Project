@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.navbar{
+  display: flex;
+  background-color:rgb(218,165,32);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right a:hover{
+    background-color: rgb(167, 70, 70);
+  }
+  /* .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  } */
+
+  /* .nav-right .active {
+    background-color: #04AA6D;
+  } */
+
+
+html {
+  box-sizing: border-box;
+}
+/* 
+*, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+/* h2{
+  background-color: black;
+} */
+h2 {
+  background-color: black;
+  color: white;
+  padding: 10px; 
+  margin: 0%;
+  
+}
+
+
+.column {
+  margin-bottom: 16px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 20px; 
+  height: 425px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  height: 300px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out; 
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.container h2 {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 4px #555; 
+}
+
+.button:hover {
+  background-color: #555;
+}
